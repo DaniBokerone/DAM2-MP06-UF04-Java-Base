@@ -36,6 +36,7 @@ public class Main {
             logger.info("Query Result:");
             logger.info(result);
 
+            //Comment to see if workflow runs
             myQuery = """
                 declare function local:gdpPerArea($country as element(country)) as xs:double? {
                     let $gdpTotal := number($country/@gdp_total) * 1000000 (: Convertint de milions a unitats per precisió :)
